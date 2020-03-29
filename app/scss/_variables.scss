@@ -1,0 +1,55 @@
+$transition-duration-short: .3s;
+$transition-duration-long: .6s;
+$transition-duration-1s: 1s;
+
+/*------------------------------------*\
+  #MEDIA-QUERY-POINTS
+\*------------------------------------*/
+
+$common-media-query-points: (
+
+  "mobile":           320px,
+
+  "tablet":           720px,
+  "tablet-down":      719px,
+
+  "desktop":          1024px,
+  "desktop-down":     1023px,
+
+  "desktop-max":      1440px,
+  "desktop-max-down": 1439px
+
+);
+
+/*------------------------------------*\
+  #MEDIA-QUERIES
+\*------------------------------------*/
+
+$common-media-queries: (
+  "mobile":      "(min-width: #{map-get($common-media-query-points, 'mobile')})",
+  "tablet":      "(min-width: #{map-get($common-media-query-points, 'tablet')})",
+  "desktop":     "(min-width: #{map-get($common-media-query-points, 'desktop')})",
+  "desktop-max": "(min-width: #{map-get($common-media-query-points, 'desktop-max')})"
+);
+
+$font-size: (
+  "1":     1rem,
+  "1.5":   1.5rem,
+  "2":     2rem,
+  "2.5":   2.5rem,
+  "3":     3rem,
+  "3.5":   3.5rem,
+  "4":     4rem,
+  "4.5":   4.5rem,
+  "5":     5rem,
+  "5.5":   5.5rem,
+  "6":     6rem,
+  "6.5":   6.5rem,
+  "7":     7rem,
+  "7.5":   7.5rem,
+  "8":     8rem,
+  "8.5":   8.5rem,
+  "9":     9rem,
+  "9.5":   9.5rem,
+  "10":    10rem,
+);

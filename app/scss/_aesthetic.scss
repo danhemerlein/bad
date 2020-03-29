@@ -1,0 +1,61 @@
+.aesthetic-font-modifier-outline-black {
+  color: #FAFAFA;
+  text-shadow: -1px -1px 1px #020202, 1px -1px 1px #020202, -1px 1px 1px #020202, 1px 1px 1px #020202; }
+
+.aesthetic-font-modifier-outline-pink {
+  color: #FAFAFA;
+  text-shadow: -1px -1px 1px #FF6AD5, 1px -1px 1px #FF6AD5, -1px 1px 1px #FF6AD5, 1px 1px 1px #FF6AD5; }
+
+.aesthetic-font-modifier-outline-purple {
+  color: #FAFAFA;
+  text-shadow: -1px -1px 1px #C774E8, 1px -1px 1px #C774E8, -1px 1px 1px #C774E8, 1px 1px 1px #C774E8; }
+
+.aesthetic-font-modifier-gradient-arizona {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline;
+  background-image: linear-gradient(to left, #FA7785, #D5D87D, #B1D4B6, #53CBBF); }
+
+.aesthetic-font-modifier-gradient-pink-blue {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline;
+  background-image: linear-gradient(to right, #FF6AD5, #8795E8); }
+
+.aesthetic-font-modifier-gradient-pink-green {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline;
+  background-image: linear-gradient(to right, #FF6AD5, #10D7AE); }
+
+.aesthetic-font-modifier-gradient-green-pink {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline;
+  background-image: linear-gradient(to right, #10D7AE, #FF6AD5); }
+
+.aesthetic-font-modifier-gradient-purple-blue {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline;
+  background-image: linear-gradient(to right, #C774E8, #8795E8); }
+
+  .aesthetic-windows-95-boot-loader > * {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(to right, #BFBFBF 0%, #000084 15%, #000084 85%, #BFBFBF 100%);
+  display: inline-block;
+  margin-right: 1px;
+  animation: aesthetic-windows-95-boot-infinite-loader 4.5s infinite;
+  animation-timing-function: linear; }
+
+.aesthetic-bg-gradient {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(#EC9F05, #FF4E00); }
