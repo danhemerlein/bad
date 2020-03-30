@@ -109,26 +109,28 @@
 
 }
 
-.unordered-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.unordered-list-dt {
+  display: none;
+
+  @include common-bp (tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .list-item {
   font-family: 'RecoletaR', sans-serif;
-  // margin: 1rem;
   font-size: 2rem;
   color: black;
   position: relative;
-  width: 25%;
 
   @include common-bp (tablet) {
     margin: 0 1rem;
   }
 
   img  {
-    width: 36px;
+    width: 50px;
     height: 36px;
   }
 
@@ -171,6 +173,22 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  @include common-bp(tablet) {
+    display: none;
+  }
+
+  svg {
+    path {
+      fill: whitesmoke;
+    }
+  }
 }
 
 
