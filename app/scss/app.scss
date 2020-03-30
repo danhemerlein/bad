@@ -7,18 +7,17 @@
 
 .container {
   display: flex;
-
   background-image: url('../assets/BAD-4.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   min-height: 100vh;
-
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   width: 100%;
   flex-direction: column;
+  position: absolute;
 
   @include common-bp(tablet) {
     background-image: url('../assets/BAD-5.jpg');
@@ -34,7 +33,7 @@
   width: 100%;
 }
 
-.headline {
+.h1 {
   text-align: center;
   font-family: 'RecoletaR', sans-serif;
   font-size: 2rem;
@@ -46,6 +45,22 @@
     margin-bottom: 0;
     padding-top: 3rem;
     padding-left: 3rem;
+  }
+}
+
+.h2 {
+  text-align: center;
+  font-family: 'RecoletaR', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+
+  @include common-bp (tablet) {
+    text-align: right;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding-top: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -77,6 +92,85 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  @include common-bp (tablet) {
+    bottom: 40px;
+    left: 50%;
+    top: initial;
+    transform: translate(-50%, 0);
+  }
+
+}
+
+.unordered-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  font-family: 'RecoletaR', sans-serif;
+  // margin: 1rem;
+  font-size: 2rem;
+  color: black;
+  position: relative;
+  width: 25%;
+
+  @include common-bp (tablet) {
+    margin: 0 1rem;
+  }
+
+  img  {
+    width: 36px;
+    height: 36px;
+  }
+
+  &::before {
+		content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: powderblue;
+    transform: scale(0, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0 ,0.2, 1);
+    transform-origin: right center;
+  }
+
+  svg {
+    path {
+      fill: whitesmoke;
+    }
+  }
+
+  @include common-bp (tablet) {
+    &:hover,
+    &:focus {
+      &::before{
+        transform: scale(1, 1);
+        transform-origin: left center;
+      }
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0
 }
 
 
