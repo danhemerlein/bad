@@ -7,6 +7,7 @@ $(document).ready(function() {
     $mobileNav: $(".js-mobile-nav"),
     mobileNavHide: "mobile-nav--hide",
     mobileNavActive: "mobile-nav--active",
+    $mobileNavToggle: $(".js-mobile-nav-toggle"),
   };
 
   var state = {
@@ -14,7 +15,6 @@ $(document).ready(function() {
   };
 
   function toggleMobileNav() {
-    console.log('toggling the nav overlay');
 
     state.mobileNavOpen = !state.mobileNavOpen;
 
@@ -38,6 +38,10 @@ $(document).ready(function() {
     });
 
     config.$navOverlay.on("click", function() {
+      toggleMobileNav();
+    })
+
+    config.$mobileNavToggle.on("click", function() {
       toggleMobileNav();
     })
 

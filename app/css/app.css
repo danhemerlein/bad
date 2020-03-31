@@ -514,13 +514,6 @@ table {
   display: flex;
   width: 100%; }
 
-.img {
-  width: 75%;
-  background-image: url("assets/BAD-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .section {
   position: absolute;
   left: 2rem;
@@ -538,8 +531,7 @@ table {
   @media (min-width: 720px) {
     .unordered-list-dt {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; } }
+      flex-direction: row; } }
 
 .list-item {
   font-family: 'RecoletaR', sans-serif;
@@ -549,9 +541,8 @@ table {
   @media (min-width: 720px) {
     .list-item {
       margin: 0 1rem; } }
-  .list-item img {
-    width: 50px;
-    height: 36px; }
+  .list-item .tidal-svg {
+    width: 42px; }
   .list-item::before {
     content: "";
     position: absolute;
@@ -587,16 +578,17 @@ table {
   @media (min-width: 720px) {
     .hamburger-menu {
       display: none; } }
-  .hamburger-menu button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer; }
   .hamburger-menu svg {
     width: 30px !important;
     height: 30px !important; }
     .hamburger-menu svg path {
       fill: whitesmoke; }
+
+.btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer; }
 
 .nav-overlay {
   display: none;
@@ -637,12 +629,27 @@ table {
   height: 100%;
   width: 100%;
   position: relative; }
-  .unordered-list-mb span {
+  .unordered-list-mb .mobile-nav-close-icon {
     position: absolute;
-    top: 1rem;
-    right: 1rem; }
-    .unordered-list-mb span svg path {
-      fill: whitesmoke; }
+    top: 0.5rem;
+    right: 0.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 10px !important; }
+    .unordered-list-mb .mobile-nav-close-icon svg {
+      width: 11px !important; }
+      .unordered-list-mb .mobile-nav-close-icon svg path {
+        fill: whitesmoke; }
+
+.merch {
+  font-family: 'RecoletaR', sans-serif;
+  font-size: 1.75rem;
+  color: whitesmoke; }
+
+a {
+  text-decoration: none; }
+  a:hover, a :focus, a :active {
+    text-decoration: none; }
 
 /* Variables */
 :root {

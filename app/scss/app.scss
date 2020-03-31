@@ -86,14 +86,6 @@
   width: 100%;
 }
 
-.img {
-  width: 75%;
-  background-image: url('assets/BAD-1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .section {
   position: absolute;
   left: 2rem;
@@ -115,7 +107,6 @@
   @include common-bp (tablet) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
@@ -129,9 +120,8 @@
     margin: 0 1rem;
   }
 
-  img  {
-    width: 50px;
-    height: 36px;
+  .tidal-svg  {
+    width: 42px;
   }
 
   &::before {
@@ -184,13 +174,6 @@
     display: none;
   }
 
-  button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-
   svg {
     width: 30px !important;
     height: 30px !important;
@@ -199,6 +182,13 @@
       fill: whitesmoke;
     }
   }
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .nav-overlay {
@@ -249,12 +239,16 @@
   width: 100%;
   position: relative;
 
-  span {
+  .mobile-nav-close-icon {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 10px !important;
 
     svg {
+      width: 11px !important;
       path {
         fill: whitesmoke;
       }
@@ -262,6 +256,19 @@
   }
 }
 
+.merch {
+  font-family: 'RecoletaR', sans-serif;
+  font-size: 1.75rem;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,:focus,:active {
+    text-decoration: none;
+  }
+}
 
 //////
 
