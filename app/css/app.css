@@ -457,7 +457,8 @@ table {
   overflow: hidden;
   width: 100%;
   flex-direction: column;
-  position: absolute; }
+  position: absolute;
+  min-height: -webkit-fill-available; }
   @media (min-width: 720px) {
     .container {
       background-image: url("../assets/BAD-5.jpg");
@@ -602,6 +603,9 @@ table {
   cursor: pointer; }
   .nav-overlay--active {
     display: block; }
+  @media (min-width: 720px) {
+    .nav-overlay {
+      display: none; } }
 
 .mobile-nav {
   background: powderblue;
@@ -619,6 +623,9 @@ table {
   .mobile-nav--active {
     transform: translateX(0);
     position: fixed; }
+  @media (min-width: 720px) {
+    .mobile-nav {
+      display: none; } }
 
 .unordered-list-mb {
   padding: 4rem 0;

@@ -18,6 +18,7 @@
   width: 100%;
   flex-direction: column;
   position: absolute;
+  min-height: -webkit-fill-available;
 
   @include common-bp(tablet) {
     background-image: url('../assets/BAD-5.jpg');
@@ -205,6 +206,10 @@
   &--active {
     display: block;
   }
+
+  @include common-bp (tablet) {
+    display: none;
+  }
 }
 
 .mobile-nav {
@@ -226,6 +231,10 @@
   &--active {
     transform: translateX(0);
     position: fixed;
+  }
+
+  @include common-bp (tablet) {
+    display: none;
   }
 }
 
