@@ -86,7 +86,6 @@ $(document).ready(function() {
 
   var init = function() {
     events();
-    console.log(getMobileOperatingSystem());
   };
 
   init ();
