@@ -141,20 +141,8 @@ table {
   #MEDIA-QUERIES
 \*------------------------------------*/
 @font-face {
-  font-family: "BalonkuRegular";
-  src: url("/fonts/BalonkuRegular.otf"); }
-
-@font-face {
-  font-family: "Bubble3d";
-  src: url("/fonts/Bubble3d.ttf") format("truetype"); }
-
-@font-face {
   font-family: "RecoletaR";
   src: url("/fonts/Recoleta-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "RecoletaB";
-  src: url("/fonts/Recoleta-Black.ttf") format("truetype"); }
 
 .aesthetic-font-modifier-outline-black {
   color: #FAFAFA;
@@ -473,7 +461,7 @@ table {
 
 .h1 {
   text-align: center;
-  font-family: 'RecoletaR', sans-serif;
+  font-family: 'RecoletaR', serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem; }
@@ -486,7 +474,7 @@ table {
 
 .h2 {
   text-align: center;
-  font-family: 'RecoletaR', sans-serif;
+  font-family: 'RecoletaR', serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem; }
@@ -535,7 +523,7 @@ table {
       flex-direction: row; } }
 
 .list-item {
-  font-family: 'RecoletaR', sans-serif;
+  font-family: 'RecoletaR', serif;
   font-size: 2rem;
   color: black;
   position: relative; }
@@ -649,7 +637,7 @@ table {
         fill: whitesmoke; }
 
 .merch {
-  font-family: 'RecoletaR', sans-serif;
+  font-family: 'RecoletaR', serif;
   font-size: 1.75rem;
   color: whitesmoke; }
 
