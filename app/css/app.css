@@ -435,7 +435,7 @@ table {
 
 .container {
   display: flex;
-  background-image: url("../assets/BAD-4.jpg");
+  background-image: url("../assets/BAD-earth-resize.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -449,9 +449,10 @@ table {
   min-height: -webkit-fill-available; }
   @media (min-width: 720px) {
     .container {
-      background-image: url("../assets/BAD-5.jpg");
+      background-image: url("../assets/BAD-earth-resize.jpg");
       flex-direction: row;
       justify-content: center;
+      background-position: 0% 10%;
       height: 100vh;
       justify-content: space-between;
       align-items: flex-start; } }
@@ -461,7 +462,7 @@ table {
 
 .h1 {
   text-align: center;
-  font-family: 'RecoletaR', serif;
+  font-family: "RecoletaR", serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem; }
@@ -474,7 +475,7 @@ table {
 
 .h2 {
   text-align: center;
-  font-family: 'RecoletaR', serif;
+  font-family: "RecoletaR", serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem; }
@@ -523,7 +524,7 @@ table {
       flex-direction: row; } }
 
 .list-item {
-  font-family: 'RecoletaR', serif;
+  font-family: "RecoletaR", serif;
   font-size: 2rem;
   color: black;
   position: relative; }
@@ -539,7 +540,7 @@ table {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #FF0000;
+    background: #ff0000;
     transform: scale(0, 1);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: right center; }
@@ -596,7 +597,7 @@ table {
       display: none; } }
 
 .mobile-nav {
-  background: #FF0000;
+  background: #ff0000;
   display: block;
   position: absolute;
   width: 160px;
@@ -637,20 +638,22 @@ table {
         fill: whitesmoke; }
 
 .merch {
-  font-family: 'RecoletaR', serif;
+  font-family: "RecoletaR", serif;
   font-size: 1.75rem;
   color: whitesmoke; }
 
 a {
   text-decoration: none; }
-  a:hover, a :focus, a :active {
+  a:hover,
+  a :focus,
+  a :active {
     text-decoration: none; }
 
 /* Variables */
 :root {
-  --first-color: #0000FF;
-  --second-color: #FF0000;
-  --third-color: #FFFF33; }
+  --first-color: #0000ff;
+  --second-color: whitesmoke;
+  --third-color: black; }
 
 /* Animation */
 .marquee {
@@ -658,7 +661,7 @@ a {
   top: 0;
   left: 0;
   width: 100vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   font-weight: bold;
   white-space: nowrap;
@@ -752,4 +755,4 @@ a {
     transform: translateX(0); } }
 
 .marquee-paragraph {
-  font-family: 'RecoletaR', sans-serif; }
+  font-family: "RecoletaR", sans-serif; }
