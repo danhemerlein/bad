@@ -435,9 +435,9 @@ table {
 
 .container {
   display: flex;
-  background-image: url("../assets/BAD-earth-resize.jpg");
+  background-image: url("../assets/BAD-jupiter.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   min-height: 100vh;
   justify-content: space-between;
@@ -449,10 +449,9 @@ table {
   min-height: -webkit-fill-available; }
   @media (min-width: 720px) {
     .container {
-      background-image: url("../assets/BAD-earth-resize.jpg");
+      background-image: url("../assets/BAD-jupiter.jpg");
       flex-direction: row;
       justify-content: center;
-      background-position: 0% 10%;
       height: 100vh;
       justify-content: space-between;
       align-items: flex-start; } }
