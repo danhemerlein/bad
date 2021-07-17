@@ -435,10 +435,10 @@ table {
 
 .container {
   display: flex;
-  background-image: url("../assets/BAD-jupiter.jpg");
+  background-image: url("../assets/bubblebath.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
   justify-content: space-between;
   align-items: center;
@@ -446,11 +446,12 @@ table {
   width: 100%;
   flex-direction: column;
   position: absolute;
-  min-height: -webkit-fill-available; }
+  min-height: -webkit-fill-available;
+  background-color: lemonchiffon; }
   @media (min-width: 720px) {
     .container {
-      background-image: url("../assets/BAD-jupiter.jpg");
       flex-direction: row;
+      background-size: cover;
       justify-content: center;
       height: 100vh;
       justify-content: space-between;
@@ -485,6 +486,18 @@ table {
       margin-bottom: 0;
       padding-top: 3rem;
       padding-right: 3rem; } }
+
+.mobile-h2 {
+  display: inline; }
+  @media (min-width: 720px) {
+    .mobile-h2 {
+      display: none; } }
+
+.desktop-h2 {
+  display: none; }
+  @media (min-width: 720px) {
+    .desktop-h2 {
+      display: inline; } }
 
 .headline-mobile {
   display: block; }
@@ -545,6 +558,9 @@ table {
     transform-origin: right center; }
   .list-item svg path {
     fill: whitesmoke; }
+    @media (min-width: 720px) {
+      .list-item svg path {
+        fill: DarkMagenta; } }
   @media (min-width: 720px) {
     .list-item:hover::before, .list-item:focus::before {
       transform: scale(1, 1);
@@ -641,6 +657,11 @@ table {
   font-size: 1.75rem;
   color: whitesmoke; }
 
+.desktop-merch {
+  font-family: "RecoletaR", serif;
+  font-size: 1.75rem;
+  color: DarkMagenta; }
+
 a {
   text-decoration: none; }
   a:hover,
@@ -651,8 +672,8 @@ a {
 /* Variables */
 :root {
   --first-color: #0000ff;
-  --second-color: whitesmoke;
-  --third-color: black; }
+  --second-color: #ff0000;
+  --third-color: #ffff33; }
 
 /* Animation */
 .marquee {

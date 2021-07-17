@@ -7,10 +7,11 @@
 
 .container {
   display: flex;
-  background-image: url("../assets/BAD-jupiter.jpg");
+  background-image: url("../assets/bubblebath.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+
   min-height: 100vh;
   justify-content: space-between;
   align-items: center;
@@ -19,10 +20,12 @@
   flex-direction: column;
   position: absolute;
   min-height: -webkit-fill-available;
+  background-color: lemonchiffon;
 
   @include common-bp(tablet) {
-    background-image: url("../assets/BAD-jupiter.jpg");
+    // background-image: url("../assets/BAD-jupiter.jpg");
     flex-direction: row;
+    background-size: cover;
     justify-content: center;
     height: 100vh;
     justify-content: space-between;
@@ -62,6 +65,20 @@
     margin-bottom: 0;
     padding-top: 3rem;
     padding-right: 3rem;
+  }
+}
+
+.mobile-h2 {
+  display: inline;
+  @include common-bp(tablet) {
+    display: none;
+  }
+}
+
+.desktop-h2 {
+  display: none;
+  @include common-bp(tablet) {
+    display: inline;
   }
 }
 
@@ -107,6 +124,7 @@
   @include common-bp(tablet) {
     display: flex;
     flex-direction: row;
+
   }
 }
 
@@ -140,6 +158,9 @@
   svg {
     path {
       fill: whitesmoke;
+      @include common-bp(tablet) {
+        fill: DarkMagenta;
+      }
     }
   }
 
@@ -270,6 +291,12 @@
   color: whitesmoke;
 }
 
+.desktop-merch {
+  font-family: "RecoletaR", serif;
+  font-size: 1.75rem;
+  color: DarkMagenta;
+}
+
 a {
   text-decoration: none;
 
@@ -285,10 +312,10 @@ a {
 /* Variables */
 :root {
   --first-color: #0000ff;
-  // --second-color: #ff0000;
-  --second-color: whitesmoke;
-  // --third-color: #ffff33;
-  --third-color: black;
+  --second-color: #ff0000;
+  // --second-color: whitesmoke;
+  --third-color: #ffff33;
+  // --third-color: black;
 }
 
 // Mixins
